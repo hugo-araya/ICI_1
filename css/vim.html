@@ -1,0 +1,522 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <link rel="Stylesheet" type="text/css" href="/css/style.css" >
+  <title>welcome home : vim online</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="KEYWORDS" content="Vim, Vi IMproved, text editor, home, documentation, tips, scripts, news">
+  <meta name="viewport" content="width=1000, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/vim_shortcut.ico">
+  <link rel="alternate" type="application/atom+xml" title="welcome home (Atom 1.0)" href="http://feed43.com/vim-scripts.xml" />
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#ffffff"> 
+
+<!-- HEADER, SPONSOR IMAGE, VIM IMAGE AND BOOK AD -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="lightbg" width="208" style="background-color: #0057b7"><img src="/images/spacer.gif" width="100" height="5" alt=""></td>
+    <td colspan="4" class="lightbg"><img src="/images/spacer.gif" width="1" height="5" alt=""></td>
+    <td class="lightbg" width="208" style="background-color: #0057b7"><img src="/images/spacer.gif" width="100" height="5" alt=""></td>
+  </tr>
+  <tr>
+  <td>
+    <table width="208" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+	<td class="lightbg" style="background-color: #0057b7">
+	  <a href="https://eu-solidarity-ukraine.ec.europa.eu/eu-stands-ukraine_en"><img src="/images/spacer.gif" width="204" height="23" alt=""></a>
+	</td>
+      </tr>
+      <tr>
+	<td class="lightbg" style="background-color: #ffd700">
+	  <a href="https://eu-solidarity-ukraine.ec.europa.eu/eu-stands-ukraine_en"><img src="/images/spacer.gif" width="204" height="23" alt=""></a>
+        </td>
+      </tr>
+    </table>
+  </td>
+  <td class="lightbg">&nbsp;&nbsp;&nbsp;</td>
+  <td class="lightbg" align="left"><a href="https://www.vim.org/sponsor/index.php"><img src="/images/sponsorvim.gif" alt="sponsor Vim development" border="0"></a></td>
+  <td class="lightbg" align="center">
+	 <a href="/"><img src="/images/vim_header.gif" border="0" alt="Vim logo" class="align-middle"></a>
+	  </td>
+  <td class="lightbg" align="right"><a href="http://iccf-holland.org/click5.html"><img src="/images/buyhelplearn.gif" alt="Vim Book Ad" border="0"></a></td>
+  <td>
+    <table width="208" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+	<td class="lightbg" width="208" style="background-color: #0057b7">
+	  <a href="https://eu-solidarity-ukraine.ec.europa.eu/eu-stands-ukraine_en"><img src="/images/spacer.gif" width="204" height="23" alt=""></a>
+	</td>
+      </tr>
+      <tr>
+	<td class="lightbg" width="208" style="background-color: #ffd700">
+	  <a href="https://eu-solidarity-ukraine.ec.europa.eu/eu-stands-ukraine_en"><img src="/images/spacer.gif" width="204" height="23" alt=""></a>
+	</td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+    <td class="lightbg" style="background-color: #ffd700"><img src="/images/spacer.gif" width="100" height="5" alt=""></td>
+    <td colspan="4" class="lightbg"><img src="/images/spacer.gif" width="1" height="5" alt=""></td>
+    <td class="lightbg" style="background-color: #ffd700"><img src="/images/spacer.gif" width="100" height="5" alt=""></td>
+  </tr>
+</table>
+<!-- THE PAGE BODY: BETWEEN HEADER AND FOOTER -->
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+  <col width="180">
+  <col width="1">
+
+  <tr valign="top">
+    <td class="sidebar">
+      <table width="180" cellpadding="4" cellspacing="0" border="0">
+        <tr valign="top">
+          <td class="sidebar">
+
+<!-- INCLUDE THE PAGE NAVIGATION -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bordercolor="red">
+    <tr>
+        <td><small>not logged in (<a href="https://www.vim.org/login.php">login</a>)</small></td>
+    </tr>
+    <tr><td>
+<small>&nbsp;</small>
+<form action="https://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-3005259998294962:bvyni59kjr1" />
+    <input type="hidden" name="ie" value="ISO-8859-1" />
+    <input type="text" name="q" size="20" />
+    <br>
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+    </td></tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="1"></td>
+    </tr>
+    <tr>
+        <td class="darkbg"><img src="/images/spacer.gif" alt='' border="0" height="3"></td>
+    </tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="2"></td>
+    </tr>
+        <tr>
+            <td class="sidebarheader">Home</td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/search.php">Advanced search</a></td>
+        </tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="7"></td>
+    </tr>
+    <tr>
+        <td class="checker"><img src="/images/spacer.gif" alt='' border="0" height="1"></td>
+    </tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="7"></td>
+    </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/about.php">About Vim</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/community.php">Community</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/news/news.php">News</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/sponsor/index.php">Sponsoring</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/trivia.php">Trivia</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/docs.php">Documentation</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader download"><a href="https://www.vim.org/download.php">Download</a></td>
+        </tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="7"></td>
+    </tr>
+    <tr>
+        <td class="checker"><img src="/images/spacer.gif" alt='' border="0" height="1"></td>
+    </tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="7"></td>
+    </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/scripts/index.php">Scripts</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/tips/index.php">Tips</a></td>
+        </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/account/index.php">My Account</a></td>
+        </tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="7"></td>
+    </tr>
+    <tr>
+        <td class="checker"><img src="/images/spacer.gif" alt='' border="0" height="1"></td>
+    </tr>
+    <tr>
+        <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="7"></td>
+    </tr>
+        <tr>
+            <td class="sidebarheader"><a href="https://www.vim.org/huh.php">Site Help</a></td>
+        </tr>
+</table>
+<br>
+<!--
+<g:plusone></g:plusone>
+-->
+
+            <table width="172" cellpadding="0" cellspacing="0" border="0">
+              <tr><td><img src="/images/spacer.gif" alt="" border="0" width="1" height="8"></td></tr>
+              <tr><td class="darkbg"><img src="/images/spacer.gif" width="1" height="3" alt=""></td></tr>
+            </table>
+            <br>
+
+<!-- INCLUDE THE PAGE SIDEBAR TEXT -->
+
+<span class="sidebarheader"><a href="huh.php">What is Vim online?</a></span>
+<p>
+Vim online is a central place for the Vim community to store useful Vim tips
+and tools.
+Vim has a scripting language that allows for plugin like extensions to enable
+IDE behavior, syntax highlighting, colorization as well as other advanced
+features.
+These scripts can be uploaded and maintained using Vim online.
+<p>
+<span class="sidebarheader"><a href="https://iccf-holland.org/">Why those ads?</a></span>
+<p>
+The profits made from ads and links on vim.org go to ICCF Holland to help poor
+children in Uganda.
+<p>
+<b>Vim and ICCF Holland supporters:</b>
+<br>
+<br>
+<a href="https://www.theblogstarter.com">The Blog Starter</a> is proud to
+support the work of Vim and ICCF.
+<br>
+<br>
+Daytrading.com supports ICCF and recommends Vim for developing
+<a href="https://www.daytrading.com/automated#programming-the-software-yourself">automated trading software</a>
+<br>
+<br>
+<a href="https://www.4kdownload.com/products/product-videodownloader">YouTube Video Downloader</a> is proud to support Vim.
+<br>
+<br>
+Investing.co.uk is a proud sponsor of ICCF and strives to educate people
+about stocks,
+<a href="https://www.investing.co.uk/developing-copy-trading-software-with-vim/">copy trading software</a>
+and other types of investing.
+
+# Text link only valid for half a year from XWord Media
+<br>
+<br>
+<a href="https://www.directory.net">Directory.net</a> is the oldest and most curated web directory online. We are proud to support VIM.org and its mission to help the children in Africa.
+
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td class="darkbg"><img src="/images/spacer.gif" width="1" height="1" border="0" alt=""><br></td>
+    <td>
+      <table width="100%" cellpadding="10" cellspacing="0" border="0" bordercolor="red">
+        <tr>
+          <td valign="top">
+
+
+
+<h1>Vim - the ubiquitous text editor</h1>
+Vim is a highly configurable text editor built to make creating and
+changing any kind of text very efficient.
+It is included as "vi" with most UNIX systems and with Apple OS X.
+<br>
+<br>
+Vim is rock stable and is continuously being developed to become even better.
+Among its features are:
+<ul style="margin-top: 0;">
+<li>persistent, multi-level undo tree</li>
+<li>extensive plugin system</li>
+<li>support for hundreds of programming languages and file formats</li>
+<li>powerful search and replace</li>
+<li>integrates with many tools</li>
+</ul>
+<p>
+
+<table cellpadding="3" cellspacing="0" border="0" width="100%">
+<tr>
+    <td class="lightbg"><span class="txth1">&nbsp;&nbsp;News</span></td>
+    <td nowrap class="lightbg" align="right"><small>&nbsp;Vim
+9.1.0674
+    is the current version&nbsp;</small></td>
+</tr>
+</table>
+
+
+    <h1>Support for the XDG Base Directory Specification</h1>
+    <p>
+    <span class="newsdate">[2024-04-18]</span> 
+    <a href="https://github.com/vim/vim/commit/c9df1fb35a1866901c32df37dd39c8b39dbdb64a">Patch 9.1.327</a> brings support for the freedesktop <a href="https://specifications.freedesktop.org/basedir-spec/latest/index.html">XDG Base Directory Specification</a> and has now been merged. A few more adjustments have been made withe following patches: <a href="https://github.com/vim/vim/commit/d1068a2bb09fd3b9d117d832105bf10dd5e48e2f">v9.1.0337</a> and <a href="https://github.com/vim/vim/commit/a34ba821076476a68e0e579723d68e896f771ba6">9.1.345</a>.
+
+That means, you can now place your configuration files under ~/.config/vim/ instead of ~/.vim so Vim will stop littering your home directory.
+
+<em>Note:</em> To make this change backwards compatible, Vim will only attempt to source from that location, if ~/.vim/vimrc and ~/.vimrc file <em>do not exist</em>. So it won't impact existing users, but users that want to start using the new location, will need to move their existing configuration to the new place.
+
+You can also read about it at <a href="https://vimhelp.org/starting.txt.html#xdg-base-dir">:h xdg-base-dir</a>.
+
+Thanks to all the contributors that help Vim continuing to grow!     (<i>Christian Brabandt</i>) 
+    <br clear="all">
+    </p>
+    <h1>Vim 9.1 is released!</h1>
+    <p>
+    <span class="newsdate">[2024-01-02]</span> 
+    The Vim project is happy to announce that Vim 9.1 has finally been released.
+
+This release is dedicated to Bram Moolenaar, Vims lead developer for more than
+30 years, who suddenly passed away in August 2023.
+
+The most notable changes are support for Vim9 classes and objects, smooth
+scrolling support and virtual text support. And as usual, runtime files have
+been updated, many bugs have been fixed and potential security relevant fixes
+have been included.
+
+You can find the full announcement <a href="/vim-9.1-released.php">here</a>.     (<i>Christian Brabandt</i>) 
+    <br clear="all">
+    </p>
+    <h1>A new Vim.org Homepage</h1>
+    <p>
+    <span class="newsdate">[2023-10-12]</span> 
+    The Vim homepage will be renovated by a few students from the FH University
+Salzburg.  Development will happen at a new <a
+href="https://github.com/vim/website_next_generation">Github repository</a>.
+Feedback is very welcome and can happen at the <a
+href="https://groups.google.com/g/vim_dev">vim_dev mailing list</a> or at the
+github repository.  <br/> See the <a
+href="https://groups.google.com/g/vim_announce/c/cUzmP2xxecM/m/tEht7Pz5HAAJ">announcement</a>.     (<i>Christian Brabandt</i>) 
+    <br clear="all">
+    </p>
+
+<table cellpadding="3" cellspacing="0" border="0" width="100%">
+<tr>
+<td><a href="https://www.vim.org/news/news.php">more news...</a></td>
+<td align="center">
+Get a Vim T-shirt from <a href="http://www.freewear.org/?org=Vim">FreeWear</a>
+</td>
+<td align="center">
+<a href="https://www.vim.org/stickers.php">Get a Vim sticker or button</a>
+</td>
+<td align="center">
+<a href="https://suzuri.jp/kmdsbng">Vim items from Japan</a>
+</td>
+</tr>
+</table>
+
+
+<table cellpadding="3" cellspacing="0" border="0" width="100%">
+<tr><td rowspan=2>
+<a href="http://www.iccf.nl/news.html"><img src="/images/vim_drill_small.JPG" width="518" height="376" alt="Vim power tool" style="margin-top:10px"></a>
+</td>
+<td>
+<p style="min-width:120px">
+<b>Vim: The power tool for everyone!</b>
+<p>
+See pictures of Bram's latest visit to Uganda on
+<a href="https://photos.app.goo.gl/B5rKBPcEr8P6emde8">Google Photos</a>.
+<p>
+Read the visit report on the <a href="http://iccf.nl/news.html">ICCF website</a>.
+</td></tr>
+
+</table>
+
+<table cellpadding="3" cellspacing="0" border="0" width="100%">
+<tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
+<tr>
+    <td class="lightbg"><span class="txth1">&nbsp;&nbsp;Recent Script Updates</span></td>
+    <td nowrap class="lightbg" align="right"><small>&nbsp;5,954 scripts, 18,198,570 downloads&nbsp;</small></td>
+</tr>
+<tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+    <td class="newsdate" nowrap valign="top">[2024-08-10]</td>
+    <td>&nbsp;<a href="https://www.vim.org/scripts/script.php?script_id=6119">gardenal</a> : It's a hydra for vim that automates theme switching.</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(0.0.1) Initial upload - <i>Bruno Ciccarino</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2024-08-07]</td>
+    <td>&nbsp;<a href="https://www.vim.org/scripts/script.php?script_id=5693">copy_linebreak.vim</a> : Switch between readable and terminal-copy-friendly wrapping options</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(2.0.0) * Complete rewrite of implementation
+* Turn off line/column highlighting options too
+* Add &lt;unique&gt; attribute to maps
+* Add missing mode prefix to maps
+* Move code out to autoload functions
+* Inline load guard conditionals
+* Drop support for Vim 6.x
+* Remove unneeded variable scoping
+* Switch to two-spacing
+ - <i>Tom Ryder</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2024-08-07]</td>
+    <td>&nbsp;<a href="https://www.vim.org/scripts/script.php?script_id=5695">strip_trailing_whitespace.vim</a> : Strip trailing whitespace exactly the way this author wants</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(3.3.0) * Match [:space:] and all Unicode spaces
+* Allow -bar after command
+* Rename autoloaded interface function
+* Simplify cursor restoration
+* Add exclamation mark to function declarations
+* Inline backported s:Cursor() function
+* Move functions into autoload
+* Use less worrisome name for a variable
+* Remove unneeded variable scoping
+* Switch to two-spacing
+ - <i>Tom Ryder</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2024-08-07]</td>
+    <td>&nbsp;<a href="https://www.vim.org/scripts/script.php?script_id=5742">replace_operator.vim</a> : Replace text from register with a motion</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(1.2.0) * Abbreviate load guard
+* Adjust name of autoloaded interface function
+* Adjust quoting for legibility
+* Remove unneeded variable scoping
+ - <i>Tom Ryder</i></td>
+</tr>
+<tr>
+    <td class="newsdate" nowrap valign="top">[2024-08-06]</td>
+    <td>&nbsp;<a href="https://www.vim.org/scripts/script.php?script_id=6118">fops</a> : Intuitive Commands for File Operations</td>
+</tr>
+<tr>
+    <td><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td>(1.0) Initial upload - <i>Connor Shugg</i></td>
+</tr>
+<tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
+<tr><td colspan="2"><a href="https://www.vim.org/scripts/index.php">more recent</a> | 
+                    <a href="https://www.vim.org/scripts/script_search_results.php?order_by=downloads">most downloaded</a> | 
+                    <a href="https://www.vim.org/scripts/script_search_results.php?order_by=rating">top rated</a></td></tr>
+<tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
+</table>
+
+
+<table cellpadding="3" cellspacing="0" border="0" width="100%">
+<tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
+<tr>
+    <td class="lightbg"><span class="txth1">&nbsp;&nbsp;Vim Tips</span></td>
+</tr>
+<tr><td colspan="2"><img src="/images/spacer.gif" width="1" height="10" alt=""></td></tr>
+</table>
+
+The tips are located on the
+<a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips wiki</a>.
+ This is a platform to exchange tips and tricks from and for Vim users.
+<p>
+
+<!-- finish off the framework -->
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td class="darkbg"><img src="/images/spacer.gif" width="1" height="1" border="0" alt=""><br></td>
+
+    <td class="sidebar">
+      <table width="128" cellpadding="4" cellspacing="0" border="0">
+        <tr valign="top">
+          <td class="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-3005259998294962";
+/* 120x600, created 7/25/08 */
+google_ad_slot = "7276811434";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+	  </td>
+	</tr>
+        <tr valign="top">
+          <td class="sidebar" align='center' style="padding-top: 16px">
+            Help Uganda
+	  </td>
+	</tr>
+        <tr valign="top">
+          <td class="sidebar" align='center'>
+             &nbsp;<br>
+	     <a href="https://iccf-holland.org/clickkindle.html"><img src="/images/kindle_125x125.gif" alt="Buy a book, help Uganda, learn Vim"></a>
+	     <br>
+	     <a href="http://iccf-holland.org/click1.html">Buy at Amazon</a>
+          </td>
+        </tr>
+<!-- INCLUDE THE RIGHT SIDE SPONSOR LINKS if present -->
+<tr valign="top">
+  <td class="sidebar">
+    &nbsp;<br>
+  </td>
+</tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+
+<!-- END OF THE PAGE BODY: BETWEEN HEADER AND FOOTER -->
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bordercolor="red">
+  <tr><td colspan="4"><img src="/images/spacer.gif" width="1" height="5" alt=""></td></tr>
+  <tr><td colspan="4" bgcolor="#000000"><img src="/images/spacer.gif" height="2" width="1" alt=""></td></tr>
+  <tr><td colspan="4"><img src="/images/spacer.gif" width="1" height="5" alt=""></td></tr>
+  <tr>
+    <td><img src="/images/spacer.gif" width="5" height="1" alt=""></td>
+
+    <td align="left" valign="top"><small>
+      If you have questions or remarks about this site, visit the
+      <a href="http://vimonline.sf.net">vimonline development</a> pages.
+      Please use this site responsibly.
+      <br> 
+      
+      Questions about <a href="http://www.vim.org/about.php">Vim</a> should go
+      to the <a href="http://www.vim.org/maillist.php">maillist</a>.
+      Help Bram <a href="http://iccf-holland.org/">help Uganda</a>.
+      </small>
+	&nbsp;
+	&nbsp;
+
+    </td>
+
+    <td align="right" valign="top">
+      	<a href="https://github.com/vim/vim" rel="nofollow">Vim at Github</a>
+    </td>
+
+    <td><img src="/images/spacer.gif" width="5" height="1" alt=""></td>
+  </tr>
+
+    
+  <tr><td colspan="4"><img src="/images/spacer.gif" width="1" height="5" alt=""></td>
+  
+  </tr>
+</table>
+
+</body>
+</html>
+
