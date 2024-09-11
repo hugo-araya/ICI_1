@@ -37,7 +37,7 @@ def pi_Euler(fin):
     return suma
 
 if __name__ == '__main__':
-    fin = 5000
+    fin = 100
     p_Leibniz = pi_Leibniz(fin)
     pipi = calcula_pi(p_Leibniz, 4)
     print("Leibniz: ", pipi)
