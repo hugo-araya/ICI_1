@@ -39,7 +39,7 @@ def pi_Euler(fin):
 if __name__ == '__main__':
     salida = open('log.txt', 'w')
     fin = 100
-    while fin <= 4000:
+    while fin <= 2000:
         print ('Generando: ', fin)
         ini = time.time()
         p_Euler = pi_Euler(fin)
