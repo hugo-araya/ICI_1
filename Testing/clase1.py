@@ -15,3 +15,4 @@ if __name__ == '__main__':
     persona2 = Persona("Mago", "Valdivia")
     persona2.imprimir()
     print(persona1)
+    print(persona2)
